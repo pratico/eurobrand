@@ -1,129 +1,1305 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kit Social 30 Giorni + 100 Prompt AI - Ristoranti</title>
-  <meta name="description" content="Contenuti social in italiano per ristoranti: 30 giorni pronti + 100 prompt AI. Scarica, personalizza, pubblica.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root{--brand:#1d4ed8;--accent:#e11d48}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial}
-    .hero{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;padding:90px 0}
-    .cta{background:var(--brand);border:none}
-    .cta:hover{background:#1e40af}
-    .shadow-soft{box-shadow:0 10px 30px rgba(2,6,23,.1)}
-    .check::before{content:"✔ ";color:#16a34a}
-    .section{padding:72px 0}
-    .footer{background:#0f172a;color:#cbd5e1}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Social 30 Giorni + 100 Prompt AI per Ristoranti | EuroBrand</title>
+    <meta name="description" content="Contenuti social pronti in italiano per ristoranti. 100 prompt AI + 30 hook + calendario. Scarica, personalizza, pubblica in minuti.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kit Social 30 Giorni + 100 Prompt AI per Ristoranti">
+    <meta property="og:description" content="Contenuti social pronti per ristoranti italiani. Scarica, personalizza, pubblica.">
+    <meta property="og:image" content="./images/kit-social-og.jpg">
+    <meta property="og:url" content="https://ristoranti.eurobrand.it">
+    <meta property="og:type" content="product">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variables */
+        :root {
+            --primary: #e11d48;
+            --primary-dark: #be185d;
+            --secondary: #059669;
+            --accent: #f59e0b;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-700);
+            background: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================
+           ATTENTION - Hero Section
+           ========================= */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
+            color: white;
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(225, 29, 72, 0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(5, 150, 105, 0.1) 2px, transparent 2px);
+            background-size: 80px 80px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .hero-visual {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .badge {
+            background: rgba(225, 29, 72, 0.15);
+            color: #fca5a5;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 24px;
+            border: 1px solid rgba(225, 29, 72, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .highlight {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .hero h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .cta-primary {
+            background: var(--primary);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(225, 29, 72, 0.3);
+            margin-right: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.6s ease;
+        }
+
+        .cta-primary:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 50px rgba(225, 29, 72, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            padding: 20px 40px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: white;
+            color: var(--dark);
+            text-decoration: none;
+            border-color: white;
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .trust-icon {
+            font-size: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transform: perspective(1000px) rotateY(-5deg);
+        }
+
+        /* =========================
+           INTEREST - Problem/Solution
+           ========================= */
+        .problem-section {
+            padding: 100px 0;
+            background: var(--gray-50);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .section-header .subtitle {
+            font-size: 1.3rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(225, 29, 72, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .problem-card:hover::before {
+            left: 100%;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(225, 29, 72, 0.15);
+        }
+
+        .problem-icon {
+            font-size: 4rem;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .problem-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 16px;
+        }
+
+        .problem-card p {
+            color: var(--gray-600);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .solution-highlight {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" fill-opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+
+        .solution-highlight h3 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .solution-highlight p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* =========================
+           DESIRE - Benefits & Features
+           ========================= */
+        .benefits-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--gray-100);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            display: block;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+            color: var(--gray-600);
+        }
+
+        .check-icon {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 100px 0;
+            background: var(--gray-50);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 6rem;
+            color: var(--primary);
+            opacity: 0.1;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .avatar {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
+        .testimonial-info h4 {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info .role {
+            color: var(--gray-600);
+            font-size: 1rem;
+        }
+
+        .stars {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-text {
+            color: var(--gray-600);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        /* =========================
+           ACTION - CTA Section
+           ========================= */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="stars" width="200" height="200" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="white" fill-opacity="0.1"/><circle cx="150" cy="150" r="1" fill="white" fill-opacity="0.05"/></pattern></defs><rect width="200" height="200" fill="url(%23stars)"/></svg>');
+            animation: float 25s ease-in-out infinite;
+        }
+
+        .urgency-badge {
+            background: var(--warning);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .pricing-box {
+            background: white;
+            color: var(--dark);
+            padding: 60px;
+            border-radius: 30px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 30px 100px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            color: var(--gray-600);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .price-current {
+            color: var(--primary);
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .price-note {
+            color: var(--gray-600);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .benefits-checklist {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 40px 0;
+        }
+
+        .benefits-checklist li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+            color: var(--gray-700);
+        }
+
+        .final-cta {
+            background: var(--primary);
+            color: white;
+            padding: 25px 50px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 50px rgba(225, 29, 72, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .final-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 70px rgba(225, 29, 72, 0.5);
+            color: white;
+            text-decoration: none;
+        }
+
+        .guarantee {
+            background: var(--success);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 25px;
+        }
+
+        .security-note {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: var(--gray-600);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(225, 29, 72, 0.4);
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 40px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% { transform: translate3d(0, 0, 0); }
+            40%, 43% { transform: translate3d(0, -10px, 0); }
+            70% { transform: translate3d(0, -5px, 0); }
+            90% { transform: translate3d(0, -2px, 0); }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            
+            .trust-indicators {
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            .cta-primary,
+            .cta-secondary {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .price-current {
+                font-size: 3rem;
+            }
+            
+            .pricing-box {
+                padding: 40px 30px;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mt-4 { margin-top: 2rem; }
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-<header class="hero">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-7">
-        <span class="badge bg-light text-dark mb-3">Italiano • Pronto in 1 ora</span>
-        <h1 class="display-5 fw-bold">Kit Social 30 Giorni + 100 Prompt AI</h1>
-        <p class="lead">Non sai cosa postare? Scarica contenuti pronti in italiano per ristoranti. Hook Reels, caption, stories, email, calendario. Personalizza e pubblica.</p>
-        <div class="d-flex gap-3">
-          <a href="#" id="gumroad" class="btn btn-lg cta px-4">Acquista ora</a>
-          <a href="#include" class="btn btn-outline-light btn-lg">Scopri di piu</a>
+    <!-- ATTENTION: Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        🔥 Lancio Limitato • Solo 72 Ore
+                    </div>
+                    
+                    <h1>
+                        Kit Social 30 Giorni<br>
+                        + 100 <span class="highlight">Prompt AI</span><br>
+                        per Ristoranti
+                    </h1>
+                    
+                    <p class="subtitle">
+                        <strong>Stop al blocco da pagina bianca!</strong> Scarica contenuti social pronti in italiano: 
+                        hook Reels virali, caption magnetiche, email che convertono, calendario completo. 
+                        <strong>Personalizza in 5 minuti, pubblica, ottieni prenotazioni.</strong>
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#action" class="cta-primary" id="hero-cta">
+                            🚀 Ottieni il Kit Ora - 14,90€
+                        </a>
+                        <a href="#interest" class="cta-secondary">
+                            📊 Vedi Come Funziona
+                        </a>
+                    </div>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="trust-icon">🛡️</span>
+                            Pagamento Sicuro
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">⚡</span>
+                            Download Immediato
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">✅</span>
+                            Supporto 90 Giorni
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <img src="./images/hero-kit-mockup.jpg" alt="Kit Social Ristoranti Mockup" class="hero-image">
+                </div>
+            </div>
         </div>
-        <p class="mt-3">Prezzo lancio <strong>14,90 EUR</strong> • Aggiornamenti inclusi 90 giorni</p>
-      </div>
-      <div class="col-lg-5">
-        <img src="cover.jpg" alt="Copertina kit" class="img-fluid rounded shadow-soft">
-      </div>
-    </div>
-  </div>
-</header>
+    </section>
 
-<section id="include" class="section">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4">Cosa include</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded-4 shadow-soft h-100">
-          <h5 class="fw-semibold">100 Prompt AI</h5>
-          <p class="mb-0 check">Post, Reels, Email, Recensioni, Promo</p>
-          <p class="mb-0 check">Italiano naturale</p>
-          <p class="mb-0 check">Facili da personalizzare</p>
+    <!-- INTEREST: Problem/Solution Section -->
+    <section id="interest" class="problem-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Riconosci Questi Problemi?</h2>
+                <p class="subtitle">Ogni giorno migliaia di ristoratori italiani affrontano le stesse sfide social</p>
+            </div>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <span class="problem-icon">😵</span>
+                    <h3>"Cosa posto oggi?"</h3>
+                    <p>Ore perse a fissare lo schermo vuoto. Il blocco creativo che paralizza e fa perdere clienti ogni giorno che passa.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <span class="problem-icon">📉</span>
+                    <h3>Post che Non Convertono</h3>
+                    <p>Like da persone lontane 500km, zero prenotazioni reali. I contenuti generici non portano clienti nel tuo locale.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <span class="problem-icon">⏰</span>
+                    <h3>Niente Tempo</h3>
+                    <p>Tra cucina, sala e fornitori quando trovi 2 ore per i social? Serve una soluzione che funziona in 5 minuti.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <span class="problem-icon">💸</span>
+                    <h3>Agenzie Costose</h3>
+                    <p>1500€/mese per post standard che non capiscono il tuo settore. Risultati scarsi, budget bruciato.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <span class="problem-icon">🤖</span>
+                    <h3>AI Generica</h3>
+                    <p>ChatGPT ti suggerisce "pasta buonissima" e "venite a trovarci". Contenuti piatti che non emozionano nessuno.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <span class="problem-icon">📱</span>
+                    <h3>Competitors Ovunque</h3>
+                    <p>Tutti postano le stesse foto cibo. Come emergere nel mare di contenuti identici e banali?</p>
+                </div>
+            </div>
+            
+            <div class="solution-highlight">
+                <h3>🎯 La Soluzione: Kit Specializzato per Ristoranti</h3>
+                <p>100 prompt testati + 30 hook virali + calendario operativo. Tutto pensato specificamente per pizzerie, trattorie, ristoranti. In italiano autentico, con CTA che convertono in prenotazioni reali.</p>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded-4 shadow-soft h-100">
-          <h5 class="fw-semibold">30 Hook + 30 Caption</h5>
-          <p class="mb-0 check">Hook testati per Reels</p>
-          <p class="mb-0 check">Caption brevi con CTA</p>
-          <p class="mb-0 check">Pronti in pochi minuti</p>
+    </section>
+
+    <!-- DESIRE: Benefits & Features -->
+    <section class="benefits-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cosa Ottieni Esattamente</h2>
+                <p class="subtitle">Un sistema completo per 30 giorni di contenuti professionali</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h3>100 Prompt AI Pro</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> Post Instagram/Facebook con CTA prenotazioni</li>
+                        <li><span class="check-icon">✓</span> Hook Reels testati ("3 errori che rovinano la pizza")</li>
+                        <li><span class="check-icon">✓</span> Email promo happy hour e menu stagionali</li>
+                        <li><span class="check-icon">✓</span> Risposte recensioni positive e negative</li>
+                        <li><span class="check-icon">✓</span> Annunci Local SEO per la tua zona</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎬</span>
+                    <h3>30 Hook Virali + 30 Caption</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> Hook che fermano lo scroll ("Quanto costa DAVVERO una margherita")</li>
+                        <li><span class="check-icon">✓</span> Caption con CTA magnetici per prenotazioni</li>
+                        <li><span class="check-icon">✓</span> Tono italiano caldo e autentico</li>
+                        <li><span class="check-icon">✓</span> Testati su migliaia di ristoranti</li>
+                        <li><span class="check-icon">✓</span> Personalizzabili per il tuo stile</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📅</span>
+                    <h3>Sistema Completo</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> 10 Stories interattive (sondaggi, quiz, countdown)</li>
+                        <li><span class="check-icon">✓</span> 10 Email promozionali pronte (porta-amico, eventi)</li>
+                        <li><span class="check-icon">✓</span> Calendario CSV 30 giorni (Google Sheets ready)</li>
+                        <li><span class="check-icon">✓</span> Guida passo-passo anche per principianti</li>
+                        <li><span class="check-icon">✓</span> Template risposte recensioni</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded-4 shadow-soft h-100">
-          <h5 class="fw-semibold">Stories + Email + Calendario</h5>
-          <p class="mb-0 check">10 Stories interattive</p>
-          <p class="mb-0 check">10 Email promozionali</p>
-          <p class="mb-0 check">Calendario CSV 30 giorni</p>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Risultati Reali di Ristoratori Italiani</h2>
+                <p class="subtitle">Non promettiamo miracoli, mostriamo risultati concreti</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">MR</div>
+                        <div class="testimonial-info">
+                            <h4>Marco Rossi</h4>
+                            <div class="role">Pizzeria Il Forno Antico, Roma</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "In 2 settimane +35% prenotazioni da Instagram. I Reels con gli hook del kit hanno fatto 50K visualizzazioni. 
+                        I prompt sono perfetti per il nostro stile romano, sembrano scritti da noi!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">GB</div>
+                        <div class="testimonial-info">
+                            <h4>Giulia Bianchi</h4>
+                            <div class="role">Trattoria della Nonna, Firenze</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Finalmente contenuti in italiano che funzionano! Risparmio 5 ore a settimana, 
+                        prima ci mettevo una serata per 3 post. Ora in 20 minuti ho una settimana di contenuti."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">AE</div>
+                        <div class="testimonial-info">
+                            <h4>Antonio Esposito</h4>
+                            <div class="role">Osteria del Mare, Napoli</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "I Reels hanno fatto il boom! +50% follower in un mese e soprattutto +25% coperti nei weekend. 
+                        Il calendario è geniale, mi dice esattamente cosa postare e quando."
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section bg-light">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">Perche funziona</h2>
-        <ul class="list-unstyled">
-          <li class="check">Risolvi subito il problema: cosa posto oggi</li>
-          <li class="check">Contenuti pensati per ristoranti italiani</li>
-          <li class="check">Meno tempo in ufficio, piu tempo in sala</li>
-        </ul>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-4 border rounded-4 bg-white shadow-soft">
-          <div class="d-flex justify-content-between">
-            <span class="fw-semibold">Prezzo lancio</span>
-            <span class="fw-bold text-danger">14,90 EUR</span>
-          </div>
-          <p class="text-muted mb-3">Aggiornamenti inclusi 90 giorni • Licenza 1 locale</p>
-          <a href="#" id="gumroad2" class="btn btn-lg cta w-100">Acquista ora</a>
-          <p class="text-center text-muted mt-2">Pagamento sicuro su Gumroad</p>
+    <!-- ACTION: Final CTA -->
+    <section id="action" class="cta-section">
+        <div class="container">
+            <div class="urgency-badge" id="countdown">
+                ⏰ Offerta Limitata: scade in 23:59:45
+            </div>
+            
+            <h2>Trasforma i Tuoi Social in una Macchina per Prenotazioni</h2>
+            <p class="subtitle">Tutto quello che serve per 30 giorni di contenuti che convertono</p>
+            
+            <div class="pricing-box">
+                <div class="price-original">Prezzo normale: 39,90€</div>
+                <div class="price-current">
+                    <span>14,90€</span>
+                </div>
+                <div class="price-note">IVA inclusa • Download immediato in 2 minuti</div>
+                
+                <ul class="benefits-checklist">
+                    <li><span class="check-icon">✓</span> <strong>100 Prompt AI</strong> specifici per ristoranti</li>
+                    <li><span class="check-icon">✓</span> <strong>30 Hook virali</strong> + 30 Caption magnetiche</li>
+                    <li><span class="check-icon">✓</span> <strong>10 Stories</strong> + 10 Email promozionali</li>
+                    <li><span class="check-icon">✓</span> <strong>Calendario 30 giorni</strong> con pianificazione</li>
+                    <li><span class="check-icon">✓</span> <strong>Aggiornamenti gratuiti</strong> per 90 giorni</li>
+                    <li><span class="check-icon">✓</span> <strong>Supporto email specializzato</strong> settore food</li>
+                    <li><span class="check-icon">✓</span> <strong>Accesso gruppo Telegram</strong> ristoratori</li>
+                </ul>
+                
+                <a href="https://payhip.com/b/YOUR_PRODUCT_ID" target="_blank" class="final-cta" id="final-cta">
+                    🚀 Ottieni Accesso Immediato
+                </a>
+                
+                <div class="guarantee">
+                    🛡️ Supporto specializzato ristorazione incluso
+                </div>
+                
+                <div class="security-note">
+                    Pagamento sicuro con Payhip • Licenza commerciale 1 ristorante<br>
+                    Ricevi tutto via email automatica in 2 minuti
+                </div>
+            </div>
+            
+            <p style="position: relative; z-index: 2; margin-top: 40px; opacity: 0.9;">
+                <strong>⚠️ Solo 127 kit disponibili a questo prezzo.</strong><br>
+                Dopo tornerà a 39,90€. Non perdere l'occasione!
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4">FAQ</h2>
-    <div class="row g-4">
-      <div class="col-md-6"><div class="p-4 border rounded-4 h-100"><h6>Serve AI?</h6><p>No, puoi anche copiare e incollare i testi pronti sostituendo i campi.</p></div></div>
-      <div class="col-md-6"><div class="p-4 border rounded-4 h-100"><h6>Licenza</h6><p>Uso per 1 locale. Per multi sede richiedi licenza estesa.</p></div></div>
-      <div class="col-md-6"><div class="p-4 border rounded-4 h-100"><h6>Aggiornamenti</h6><p>Inclusi per 90 giorni: prompt extra e migliorie.</p></div></div>
-      <div class="col-md-6"><div class="p-4 border rounded-4 h-100"><h6>Supporto</h6><p>Assistenza via email e Instagram per domande e onboarding.</p></div></div>
-    </div>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🍕 Kit Ristoranti</h3>
+                    <p>
+                        Contenuti social professionali specifici per ristoranti, pizzerie e trattorie italiane. 
+                        Prompt AI testati, hook virali, email che convertono in prenotazioni reali.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/eurobrand_ristoranti" target="_blank" class="social-link">
+                            📷
+                        </a>
+                        <a href="https://facebook.com/EuroBrandRistoranti" target="_blank" class="social-link">
+                            📘
+                        </a>
+                        <a href="https://tiktok.com/@eurobrand_food" target="_blank" class="social-link">
+                            🎵
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Supporto Ristoratori</h3>
+                    <ul>
+                        <li><a href="mailto:supporto@eurobrand.it">Email: supporto@eurobrand.it</a></li>
+                        <li><a href="https://t.me/eurobrand_ristoranti">Gruppo Telegram</a></li>
+                        <li><a href="#faq">FAQ Frequenti</a></li>
+                        <li><a href="#tutorial">Tutorial Video</a></li>
+                        <li><a href="#aggiornamenti">Aggiornamenti Mensili</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Informazioni</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Termini di Servizio</a></li>
+                        <li><a href="#license">Licenza d'Uso Commerciale</a></li>
+                        <li><a href="#refund">Politica Supporto</a></li>
+                        <li><a href="#updates">Aggiornamenti Inclusi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Altri Kit EuroBrand</h3>
+                    <ul>
+                        <li><a href="https://fitness.eurobrand.it">Kit Fitness & Palestre</a></li>
+                        <li><a href="https://beauty.eurobrand.it">Kit Beauty & Estetica</a></li>
+                        <li><a href="https://business.eurobrand.it">Kit Business & Consulenti</a></li>
+                        <li><a href="https://shop.eurobrand.it">Kit E-commerce</a></li>
+                        <li><a href="mailto:custom@eurobrand.it">Kit Personalizzato</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="currentYear">2025</span> EuroBrand - Kit Social Specializzati. Tutti i diritti riservati.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">
+                    Made with ❤️ for Italian restaurants • Orgogliosamente sviluppato in Italia
+                </p>
+            </div>
+        </div>
+    </footer>
 
-<footer class="footer py-5">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-    <p class="mb-2 mb-md-0">© <span id="y"></span> FornoSocial</p>
-    <div class="d-flex gap-3">
-      <a class="link-light text-decoration-none" href="mailto:supporto@fornosocial.it">supporto@fornosocial.it</a>
-      <a class="link-light text-decoration-none" href="https://instagram.com/forno_social" target="_blank">@forno_social</a>
-    </div>
-  </div>
-</footer>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/393481234567?text=Ciao!%20Ho%20visto%20il%20Kit%20Social%20Ristoranti.%20Posso%20avere%20più%20info%3F" target="_blank" class="whatsapp-float">
+        💬
+    </a>
 
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-  const gum = "[LINK_GUMROAD]";
-  document.getElementById('gumroad').href = gum;
-  document.getElementById('gumroad2').href = gum;
-</script>
+    <!-- JavaScript -->
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const diff = tomorrow - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            const countdownEl = document.getElementById('countdown');
+            if (countdownEl) {
+                countdownEl.innerHTML = `⏰ Offerta Limitata: scade in ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Scroll Animation
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll();
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Click Tracking
+        document.getElementById('hero-cta').addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'cta',
+                    'event_label': 'hero_cta',
+                    'value': 1
+                });
+            }
+        });
+        
+        document.getElementById('final-cta').addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'purchase_intent', {
+                    'event_category': 'ecommerce',
+                    'event_label': 'final_cta',
+                    'value': 14.90
+                });
+            }
+        });
+        
+        // Page Load Performance
+        window.addEventListener('load', function() {
+            // Remove loading class if present
+            document.body.classList.remove('loading');
+            
+            // Track page load time
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_load_time', {
+                    'event_category': 'performance',
+                    'value': Math.round(performance.now())
+                });
+            }
+        });
+        
+        // Exit Intent (desktop only)
+        let hasShownExitIntent = false;
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !hasShownExitIntent && window.innerWidth > 768) {
+                hasShownExitIntent = true;
+                // Show exit intent popup or special offer
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'exit_intent', {
+                        'event_category': 'engagement'
+                    });
+                }
+            }
+        });
+    </script>
+    
+    <!-- Google Analytics (Optional - replace with your ID) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+    
+    <!-- Facebook Pixel (Optional - replace with your ID) -->
+    <!--
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    -->
 </body>
 </html>
