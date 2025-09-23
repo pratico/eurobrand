@@ -1,231 +1,1466 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>EuroBrand - Kit Ristoranti | Funnel AIDA</title>
-  <meta name="description" content="EuroBrand - Kit Social Ristoranti: aumenta clienti, risparmia tempo, contenuti AI pronti. Funnel AIDA per la vendita del kit definitivo per la ristorazione.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', Arial, sans-serif;
-      margin: 0;
-      color: #23272f;
-      background: #f8fafc;
-    }
-    header {
-      background: #0f172a;
-      color: #fff;
-      padding: 44px 0 36px 0;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 110px;
-      border-radius: 14px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 24px rgba(239,68,68,0.18);
-    }
-    .section {
-      max-width: 840px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 30px rgba(15,23,42,0.04);
-      padding: 38px 26px 32px;
-    }
-    .aida-step {
-      margin-bottom: 50px;
-      padding-bottom: 42px;
-      border-bottom: 1px solid #f1f5f9;
-    }
-    .aida-title {
-      font-size: 2rem;
-      color: #e11d48;
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .aida-icon {
-      font-size: 2rem;
-    }
-    .subtitle {
-      color: #64748b;
-      font-size: 1.18rem;
-      margin-top: -7px;
-      margin-bottom: 25px;
-      font-weight: 600;
-    }
-    .cta {
-      background: #e11d48;
-      color: #fff !important;
-      display: inline-block;
-      margin: 16px 0 0 0;
-      padding: 16px 46px;
-      font-size: 1.3rem;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 3px 18px rgba(239,68,68,0.10);
-      transition: background 0.2s;
-    }
-    .cta:hover {
-      background: #be185d;
-    }
-    .features-list {
-      padding-left: 24px;
-      margin: 0 0 18px 0;
-    }
-    .features-list li {
-      margin-bottom: 12px;
-      font-size: 1.09rem;
-      color: #373944;
-    }
-    .testimonial-box {
-      background: #f8fafc;
-      padding: 18px 16px 10px;
-      border-radius: 12px;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-      font-style: italic;
-      color: #475569;
-      margin-bottom: 12px;
-    }
-    .testimonial-name {
-      color: #e11d48; font-weight:600; font-style:normal;
-    }
-    /* Social icon bar */
-    .social-bar {
-      margin: 44px 0 0 0;
-      display: flex;
-      justify-content: center;
-      gap: 26px;
-    }
-    .social-link {
-      display: inline-block;
-      width: 39px;
-      height: 39px;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 2px 10px rgba(15,23,42,0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: box-shadow 0.2s;
-    }
-    .social-link:hover {
-      box-shadow: 0 4px 16px rgba(239,68,68,0.27);
-      background: #ffe4e6;
-    }
-    .social-link svg {
-      height: 24px;
-      width: 24px;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      .section { padding: 20px 4vw; }
-      header, .testimonial-box { font-size: 1rem; }
-      .aida-title { font-size: 1.4rem;}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Social Ristoranti - 30 Giorni + 100 Prompt AI | EuroBrand</title>
+    <meta name="description" content="Kit Social completo per ristoranti: 100 prompt AI + calendar 30 giorni + hook reels. Contenuti pronti in italiano, personalizzabili in minuti.">
+    <meta name="keywords" content="kit social ristoranti, prompt ai ristoranti, marketing ristoranti, instagram reels food, social media pizzerie">
+    <meta name="author" content="EuroBrand - Kit Ristoranti">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kit Social Ristoranti - 30 Giorni + 100 Prompt AI">
+    <meta property="og:description" content="Contenuti social pronti per ristoranti italiani. Scarica, personalizza, pubblica.">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="https://ristoranti.eurobrand.it/images/og-image.jpg">
+    <meta property="og:url" content="https://ristoranti.eurobrand.it">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='18' font-size='18'>🍕</text></svg>">
+    
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* CSS VARIABLES */
+        :root {
+            --primary-color: #dc2626;
+            --primary-dark: #b91c1c;
+            --secondary-color: #059669;
+            --accent-color: #f59e0b;
+            --dark-color: #0f172a;
+            --dark-light: #1e293b;
+            --gray-light: #f8fafc;
+            --gray-medium: #64748b;
+            --gray-dark: #334155;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+        
+        p { 
+            margin-bottom: 1rem; 
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* LAYOUT COMPONENTS */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-sm {
+            padding: 3rem 0;
+        }
+        
+        /* HEADER - ATTENTION */
+        .header {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* HERO SECTION - ATTENTION */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-color) 0%, var(--dark-light) 100%);
+            color: var(--white);
+            padding: 8rem 0 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(5, 150, 105, 0.1) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-badge {
+            background: rgba(220, 38, 38, 0.2);
+            color: #fca5a5;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .hero-highlight {
+            color: var(--primary-color);
+            text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            color: var(--white);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--dark-color);
+            border-color: var(--white);
+        }
+        
+        .btn-cta {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: var(--shadow-xl);
+            font-size: 1.2rem;
+            padding: 1.5rem 3rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(220, 38, 38, 0.4); }
+            to { box-shadow: 0 0 30px rgba(220, 38, 38, 0.6); }
+        }
+        
+        /* TRUST INDICATORS - ATTENTION */
+        .trust-indicators {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* FEATURES SECTION - INTEREST */
+        .features {
+            background: var(--gray-light);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .feature-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--gray-dark);
+        }
+        
+        .check-icon {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        /* HOW IT WORKS - INTEREST */
+        .how-it-works {
+            background: var(--white);
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 4rem;
+            height: 4rem;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .step-description {
+            color: var(--gray-medium);
+            line-height: 1.6;
+        }
+        
+        /* SOCIAL PROOF - DESIRE */
+        .social-proof {
+            background: var(--gray-light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .avatar {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: var(--gray-medium);
+        }
+        
+        .stars {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--gray-dark);
+        }
+        
+        /* PRICING - DESIRE/ACTION */
+        .pricing {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" fill-opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+        
+        .pricing-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .urgency-timer {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 2rem;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .pricing-box {
+            background: var(--white);
+            color: var(--dark-color);
+            padding: 3rem;
+            border-radius: 1.5rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 3;
+        }
+        
+        .price-comparison {
+            margin-bottom: 1.5rem;
+        }
+        
+        .price-original {
+            text-decoration: line-through;
+            color: var(--gray-medium);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-current {
+            color: var(--primary-color);
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-note {
+            color: var(--gray-medium);
+            margin-bottom: 2rem;
+        }
+        
+        .benefits-list {
+            text-align: left;
+            margin: 2rem 0;
+        }
+        
+        .benefits-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .guarantee-badge {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+        
+        /* FAQ - ACTION SUPPORT */
+        .faq {
+            background: var(--white);
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1.5rem 0;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--dark-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+        
+        .faq-answer {
+            color: var(--gray-medium);
+            margin-top: 1rem;
+            line-height: 1.6;
+            display: none;
+            padding-left: 1rem;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .faq-answer.show {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .faq-icon.rotated {
+            transform: rotate(180deg);
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--white);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* FLOATING WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            width: 3.5rem;
+            height: 3.5rem;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-xl);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: var(--white);
+        }
+        
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+            
+            .nav {
+                display: none;
+            }
+            
+            .features-grid,
+            .steps-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .trust-indicators {
+                gap: 1.5rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+            
+            .pricing-box {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .price-current {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* ACCESSIBILITY */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* HIGH CONTRAST */
+        @media (prefers-contrast: high) {
+            :root {
+                --shadow-sm: none;
+                --shadow-md: none;
+                --shadow-lg: none;
+                --shadow-xl: none;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="kit-ristoranti-cover.png" alt="Kit Social AI Ristoranti" />
-    <h1>EuroBrand - Kit Ristoranti</h1>
-    <div style="font-size: 1.04rem; color: #f3f4f6; font-weight: 600;">
-      🍕 Soluzioni social AI su misura per la ristorazione italiana.<br>
-      Contenuti che convertono, clienti che ritornano.
-    </div>
-    <div class="social-bar">
-      <a class="social-link" href="https://instagram.com/eurobrand_social" title="Visita Instagram" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.5" stroke="#e1306c" stroke-width="1.5"/><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25" stroke="#e1306c" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#e1306c"/></svg>
-      </a>
-      <a class="social-link" href="https://facebook.com/EuroBrandSocialKit" title="Visita Facebook" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25" stroke="#2563eb" stroke-width="1.5"/><path d="M16 12h-2v4h-2v-4h-1.5V10H12V8.75C12 8.06 12.56 7.5 13.25 7.5H16v2h-2.5V10H16v2Z" fill="#2563eb"/></svg>
-      </a>
-      <a class="social-link" href="https://tiktok.com/@eurobrandsocial" title="Visita TikTok" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M16.4 2v4.5a3.1 3.1 0 002.8 3.1c.36.05.72.09 1.09.09V12h-2a5 5 0 01-5-5V3.6h3.05ZM7 21a5 5 0 01-5-5 5 5 0 015-5h2v2H7a3 3 0 100 6 3 3 0 003-3v-2h2v2a5 5 0 01-5 5Z" fill="#111" /></svg>
-      </a>
-    </div>
-  </header>
-  <div class="section">
-    <!-- ATTENZIONE -->
-    <div class="aida-step">
-      <div class="aida-title"><span class="aida-icon">👀</span>Attira l'attenzione</div>
-      <div class="subtitle">Sei un ristorante, pizzeria, o trattoria? Sei stanco di pubblicare foto che non convertono?</div>
-      <ul class="features-list">
-        <li>Stai perdendo clienti ogni giorno perché non hai contenuti originali?</li>
-        <li>Troppe ore spese per postare e poche prenotazioni?</li>
-        <li>Vuoi finalmente distinguerti dai concorrenti?</li>
-      </ul>
-      <div class="testimonial-box">
-        "Per mesi pubblicavamo solo foto dei piatti... da quando usiamo i prompt AI EuroBrand, IG e Facebook portano clienti veri a tavola."
-        <div class="testimonial-name">— Marco (Osteria Il Forno, Roma)</div>
-      </div>
-    </div>
-    <!-- INTERESSE -->
-    <div class="aida-step">
-      <div class="aida-title"><span class="aida-icon">💡</span>Suscita Interesse</div>
-      <div class="subtitle">Kit Social AI pronto per la ristorazione italiana</div>
-      <ul class="features-list">
-        <li>100 prompt AI studiati per il food (post, reels, email, recensioni, promo)</li>
-        <li>30 hook reel virali + 30 caption con CTA "prenota subito"</li>
-        <li>10 idee stories interattive e 10 email professionali</li>
-        <li>Calendario editoriale 30 giorni già compilato</li>
-        <li>Istruzioni rapidissime anche per chi "odia" i social</li>
-      </ul>
-      <div class="testimonial-box">
-        "Un prompt, una pubblicazione automatica, oggi ho il calendario social pieno per un mese!"
-        <div class="testimonial-name">— Giulia (Trattoria Nonna, Firenze)</div>
-      </div>
-    </div>
-    <!-- DESIDERIO -->
-    <div class="aida-step">
-      <div class="aida-title"><span class="aida-icon">🔥</span>Crea Desiderio</div>
-      <div class="subtitle">Perché amano EuroBrand - Kit Ristoranti</div>
-      <ul class="features-list">
-        <li>Zero improvvisazione: solo contenuti testati nel settore food</li>
-        <li>Risparmia almeno 6 ore a settimana: tutto pronto, zero fatica</li>
-        <li>Più prenotazioni, più recensioni positive</li>
-        <li>Perfetto anche per social manager e piccoli imprenditori</li>
-        <li>Bonus: prompt immagini AI premium (Midjourney, Dall-E)</li>
-      </ul>
-      <div class="testimonial-box">
-        "Reels e stories generate con il kit EuroBrand hanno portato più prenotazioni che ogni altra campagna fatta."
-        <div class="testimonial-name">— Antonio (Pizzeria Napoli, Milano)</div>
-      </div>
-    </div>
-    <!-- AZIONE -->
-    <div>
-      <div class="aida-title"><span class="aida-icon">🚀</span>Punta all'Azione!</div>
-      <div class="subtitle">Inizia oggi: scarica e personalizza. Domani il calendario è già pieno!</div>
-      <a class="cta" href="https://payhip.com/b/YOUR_PRODUCT_ID" target="_blank">
-        👉 Acquista Subito - 14,90€
-      </a>
-      <p style="margin-top:15px; font-size:1.09rem; color:#64748b;">
-        Pagamento sicuro · Download immediato · Supporto 90 giorni
-      </p>
-      <ul class="features-list" style="margin-top:18px;">
-        <li><b>Domande?</b> Scrivici su WhatsApp: <a href="https://wa.me/393481234567" style="color:#e11d48;text-decoration:underline;" target="_blank">393481234567</a></li>
-        <li><b>Email:</b> <a href="mailto:supporto@eurobrand.it" style="color:#e11d48;text-decoration:underline;">supporto@eurobrand.it</a></li>
-      </ul>
-    </div>
-  </div>
-  <footer style="margin-top:60px;padding:38px 0 34px 0;background:#0f172a;text-align:center;color:#fff;font-size:1rem;font-weight:600;border-radius:0 0 12px 12px">
-    © 2025 EuroBrand - Kit Ristoranti · Solo per il settore ristorazione
-  </footer>
-  <script>
-    // Google Analytics esempio (personalizza con il tuo tag)
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){ dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'UA-XXXXXXX-X' );
-  </script>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span>🍕</span>
+                EuroBrand - Kit Ristoranti
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#features">Dettagli</a></li>
+                    <li><a href="#pricing">Prezzi</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION - ATTENTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🔥 Lanci Oggi • Scarica in 1 Ora
+                </div>
+                
+                <h1>
+                    Kit Social 30 Giorni + 100 Prompt AI<br>
+                    <span class="hero-highlight">per Ristoranti</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Basta perdere ore a pensare cosa postare! Scarica contenuti social pronti in italiano: 
+                    hook Reels, caption, stories, email, calendario. Personalizza [campi] e pubblica in minuti.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary" id="hero-cta">
+                        🛒 Acquista Ora - Solo 14,90€
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        📋 Scopri Cosa Include
+                    </a>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span>🛡️</span>
+                        <span>Pagamento Sicuro</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>⬇️</span>
+                        <span>Download Immediato</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>🎧</span>
+                        <span>Supporto 90 Giorni</span>
+                    </div>
+                    <div class="trust-item">
+                        <span>🔄</span>
+                        <span>Aggiornamenti Inclusi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION - INTEREST -->
+    <section id="features" class="section features fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cosa Include il Kit Ristoranti</h2>
+                <p class="section-subtitle">
+                    Tutto quello che serve per 30 giorni di contenuti social professionali
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h3 class="feature-title">100 Prompt AI Ristoranti</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> Post Instagram/Facebook per ristoranti</li>
+                        <li><span class="check-icon">✓</span> Hook Reels virali settore food</li>
+                        <li><span class="check-icon">✓</span> Email promozionali happy hour</li>
+                        <li><span class="check-icon">✓</span> Risposte recensioni ristoranti</li>
+                        <li><span class="check-icon">✓</span> Local SEO per pizzerie/trattorie</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎬</span>
+                    <h3 class="feature-title">30 Hook + 30 Caption Food</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> Hook testati per Reels food</li>
+                        <li><span class="check-icon">✓</span> Caption con CTA prenotazioni</li>
+                        <li><span class="check-icon">✓</span> Pronto in pochi minuti</li>
+                        <li><span class="check-icon">✓</span> Aumenta engagement ristorante</li>
+                        <li><span class="check-icon">✓</span> Italiano naturale settore</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📅</span>
+                    <h3 class="feature-title">Stories + Email + Calendario</h3>
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> 10 Stories interattive ristoranti</li>
+                        <li><span class="check-icon">✓</span> 10 Email promo menu/eventi</li>
+                        <li><span class="check-icon">✓</span> Calendario editoriale 30gg CSV</li>
+                        <li><span class="check-icon">✓</span> Google Sheets compatibile</li>
+                        <li><span class="check-icon">✓</span> Pianificazione stagionale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS - INTEREST -->
+    <section class="section how-it-works fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Come Funziona</h2>
+                <p class="section-subtitle">
+                    3 passi semplici per contenuti social professionali
+                </p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Personalizza i Campi</h3>
+                    <p class="step-description">
+                        Sostituisci [piatto], [prezzo], [zona] con i tuoi dati. 
+                        Esempio: [carbonara] → "Carbonara della Casa"
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Copia in ChatGPT</h3>
+                    <p class="step-description">
+                        Incolla il prompt in ChatGPT e chiedi: 
+                        "riscrivi in italiano naturale e caldo"
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Pubblica e Vendi</h3>
+                    <p class="step-description">
+                        Segui il calendario incluso e guarda crescere 
+                        engagement e prenotazioni
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF - DESIRE -->
+    <section class="section social-proof fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Risultati Reali di Ristoratori</h2>
+                <p class="section-subtitle">
+                    Storie di successo in poche settimane
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">MR</div>
+                        <div class="testimonial-info">
+                            <h4>Marco Rossi</h4>
+                            <div class="testimonial-role">Pizzeria Il Forno, Roma</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "In sole 2 settimane +35% prenotazioni da Instagram. 
+                        I prompt sono perfetti per il nostro stile romano e fanno la differenza!"
+                    </p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">GB</div>
+                        <div class="testimonial-info">
+                            <h4>Giulia Bianchi</h4>
+                            <div class="testimonial-role">Trattoria Nonna, Firenze</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Finalmente contenuti in italiano che funzionano davvero! 
+                        Risparmio 5 ore a settimana e i risultati si vedono."
+                    </p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">AE</div>
+                        <div class="testimonial-info">
+                            <h4>Antonio Esposito</h4>
+                            <div class="testimonial-role">Osteria del Mare, Napoli</div>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "I Reels hanno fatto il boom! +50% follower in un mese. 
+                        Contenuto di qualità, consigliatissimo a tutti i colleghi."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION - DESIRE/ACTION -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="pricing-content">
+                <div class="urgency-timer">
+                    ⏰ Offerta Limitata: scade in <span id="countdown">23:59:45</span>
+                </div>
+                
+                <h2>Inizia Oggi Stesso</h2>
+                <p>Tutto quello che serve per 30 giorni di contenuti per il tuo ristorante</p>
+                
+                <div class="pricing-box">
+                    <div class="price-comparison">
+                        <div class="price-original">Prezzo normale: 29,90€</div>
+                        <div class="price-current">14,90€</div>
+                        <div class="price-note">IVA inclusa • Download immediato</div>
+                    </div>
+                    
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>100 Prompt AI ristoranti ChatGPT ready</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>30 Hook virali + 30 Caption CTA</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>10 Stories + 10 Email promozionali</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Calendario menu 30 giorni CSV</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Aggiornamenti stagionali 90 giorni</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Supporto specializzato ristorazione</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://payhip.com/b/YOUR_PRODUCT_ID" 
+                       class="btn btn-cta" 
+                       style="width: 100%; margin: 2rem 0 1rem;" 
+                       target="_blank"
+                       id="main-purchase-btn">
+                        🛒 Acquista Ora - 14,90€
+                    </a>
+                    
+                    <div class="guarantee-badge">
+                        🛡️ Supporto 90 giorni • Pagamento sicuro
+                    </div>
+                    
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray-medium);">
+                        Licenza commerciale 1 ristorante • File TXT + PDF + CSV
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION - ACTION SUPPORT -->
+    <section id="faq" class="section faq fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Domande Frequenti</h2>
+                <p class="section-subtitle">
+                    Tutto quello che devi sapere sul Kit Social Ristoranti
+                </p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>I prompt funzionano per pizzerie, trattorie e agriturismi?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sì, il kit è specificatamente progettato per tutto il settore ristorazione: 
+                        ristoranti, pizzerie, trattorie, osterie, agriturismi, street food, 
+                        gastronomy e qualsiasi attività food & beverage.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Serve ChatGPT Plus per usare i prompt del settore food?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, tutti i prompt per ristoranti funzionano perfettamente anche con la 
+                        versione gratuita di ChatGPT, Claude, Gemini o qualsiasi altra AI. 
+                        Sono ottimizzati per risultati professionali senza abbonamenti.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Include contenuti per menu stagionali e eventi speciali?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Assolutamente! Riceverai aggiornamenti gratuiti per 90 giorni con prompt 
+                        per menu stagionali (autunno/inverno/primavera/estate), eventi speciali, 
+                        festività e trend del settore food.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>È adatto anche per catene di ristoranti o franchising?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        La licenza standard è per 1 locale. Per catene, franchising o 
+                        multi-location, contattaci per licenze estese a prezzo dedicato 
+                        con funzionalità avanzate di personalizzazione.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Che tipo di supporto ricevo per il settore ristorazione?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Supporto completo specializzato nel settore food & beverage: 
+                        assistenza via email, tutorial step-by-step per ristoratori, 
+                        accesso al gruppo Telegram privato ristoratori italiani e 
+                        consulenza personalizzazione per la tua tipologia di locale.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🍕 EuroBrand - Kit Ristoranti</h3>
+                    <p>
+                        Contenuti social professionali specifici per il settore ristorazione italiano. 
+                        Prompt AI, hook, calendar e strategie che convertono in prenotazioni reali.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/eurobrand_kitristoranti" class="social-link" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/EuroBrandKitRistoranti" class="social-link" target="_blank" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@eurobrandkitristoranti" class="social-link" target="_blank" aria-label="TikTok">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Supporto Ristoratori</h3>
+                    <ul>
+                        <li><a href="mailto:supporto@eurobrand.it">supporto@eurobrand.it</a></li>
+                        <li><a href="mailto:ristoranti@eurobrand.it">ristoranti@eurobrand.it</a></li>
+                        <li><a href="#faq">FAQ Ristoranti</a></li>
+                        <li><a href="#tutorial">Tutorial Food</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Informazioni Legali</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Termini Servizio</a></li>
+                        <li><a href="#license">Licenza d'Uso</a></li>
+                        <li><a href="#refunds">Politica Rimborsi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> EuroBrand - Kit Ristoranti. Tutti i diritti riservati.</p>
+                <p>Made with ❤️ for Italian restaurants</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/393481234567?text=Ciao,%20ho%20visto%20il%20Kit%20Social%20Ristoranti.%20Posso%20avere%20info?" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contatto WhatsApp">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // COUNTDOWN TIMER
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const diff = tomorrow - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            const countdownEl = document.getElementById('countdown');
+            if (countdownEl) {
+                const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                countdownEl.textContent = timeString;
+            }
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // FAQ TOGGLE
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(faq => {
+                if (faq !== answer) {
+                    faq.classList.remove('show');
+                }
+            });
+            document.querySelectorAll('.faq-icon').forEach(faqIcon => {
+                if (faqIcon !== icon) {
+                    faqIcon.classList.remove('rotated');
+                }
+            });
+            
+            // Toggle current FAQ
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+                icon.classList.remove('rotated');
+            } else {
+                answer.classList.add('show');
+                icon.classList.add('rotated');
+            }
+        }
+
+        // SMOOTH SCROLLING
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // SCROLL ANIMATIONS
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // ANALYTICS TRACKING
+        function trackEvent(eventName, properties = {}) {
+            // Google Analytics 4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, properties);
+            }
+            
+            // Facebook Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', eventName, properties);
+            }
+            
+            console.log('Event tracked:', eventName, properties);
+        }
+
+        // TRACK BUTTON CLICKS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track Hero CTA
+            document.getElementById('hero-cta')?.addEventListener('click', function() {
+                trackEvent('hero_cta_click', {
+                    button_text: 'Acquista Ora - Solo 14,90€',
+                    section: 'hero'
+                });
+            });
+            
+            // Track Main Purchase Button
+            document.getElementById('main-purchase-btn')?.addEventListener('click', function() {
+                trackEvent('purchase_intent', {
+                    button_text: 'Acquista Ora - 14,90€',
+                    section: 'pricing',
+                    value: 14.90,
+                    currency: 'EUR'
+                });
+            });
+            
+            // Track WhatsApp Click
+            document.querySelector('.whatsapp-float')?.addEventListener('click', function() {
+                trackEvent('whatsapp_click', {
+                    section: 'floating_button'
+                });
+            });
+            
+            // Track FAQ Interactions
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const questionText = this.querySelector('span').textContent;
+                    trackEvent('faq_click', {
+                        question: questionText
+                    });
+                });
+            });
+            
+            // Set current year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Initialize animations
+            animateOnScroll();
+        });
+
+        // HEADER SCROLL EFFECT
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.backgroundColor = 'var(--dark-color)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // ERROR HANDLING
+        window.addEventListener('error', function(e) {
+            console.log('Error caught:', e.error);
+            // Track errors if needed
+            trackEvent('javascript_error', {
+                message: e.error?.message || 'Unknown error',
+                filename: e.filename,
+                lineno: e.lineno
+            });
+        });
+
+        // PERFORMANCE MONITORING
+        window.addEventListener('load', function() {
+            if ('performance' in window && 'timing' in performance) {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                trackEvent('page_load_time', {
+                    load_time: loadTime,
+                    page: 'kit_ristoranti_landing'
+                });
+            }
+        });
+
+        // VIEWPORT VISIBILITY
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+    </script>
+
+    <!-- Google Analytics (sostituisci GA_MEASUREMENT_ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Kit Social Ristoranti - Landing',
+            custom_map: {'custom_parameter_1': 'kit_ristoranti'}
+        });
+    </script>
+
+    <!-- Facebook Pixel (sostituisci PIXEL_ID) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+        
+        // Track specific events
+        fbq('track', 'ViewContent', {
+            content_name: 'Kit Social Ristoranti',
+            content_category: 'Digital Products',
+            value: 14.90,
+            currency: 'EUR'
+        });
+    </script>
 </body>
 </html>
