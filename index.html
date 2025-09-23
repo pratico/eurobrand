@@ -3,156 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kit Social Ristoranti | Funnel AIDA EuroBrand</title>
-  <meta name="description" content="Kit Social Ristoranti 30 giorni: prompt AI, strategie Instagram e contenuti che convertono. Made by EuroBrand, soluzioni per ristoranti.">
+  <title>EuroBrand - Kit Ristoranti | Funnel AIDA</title>
+  <meta name="description" content="EuroBrand - Kit Social Ristoranti: aumenta clienti, risparmia tempo, contenuti AI pronti. Funnel AIDA per la vendita del kit definitivo per la ristorazione.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { background:#f8fafc; color:#1e293b; margin:0; font-family:'Segoe UI',Arial,sans-serif; }
-    .main { max-width:920px; margin:0 auto; padding:0 12px; }
-    header{text-align:center;padding:42px 0 30px;background:linear-gradient(135deg,#e11d48 0%,#1e293b 100%);color:#fff;border-radius:0 0 32px 32px;}
-    header img{width:110px; border-radius:19px; margin-bottom:14px;}
-    .brand{font-size:2rem;font-weight:bold;}
-    .subtitle{font-size:1.13rem; margin-bottom:14px;}
-    nav {margin:10px 0 0;}
-    nav a {color:#fff;text-decoration:none;margin:0 11px;font-size:1rem;}
-    nav a:hover{color:#fed7aa;}
-    .block{background:#fff;padding:36px 15px 28px;border-radius:16px;box-shadow:0 2px 15px rgba(40,41,44,.07);margin:44px 0 32px;}
-    h2{color:#e11d48;font-size:2rem;}
-    h3{color:#1e293b;}
-    .img-section img{width:100%;max-width:350px;border-radius:11px;margin:18px 2px;}
-    .benefits{list-style:none;padding:0;}
-    .benefits li{margin-bottom:13px;font-size:1.1rem;display:flex;align-items:center;}
-    .benefits li svg{margin-right:8px;fill:#10B981;width:20px;}
-    .btn-main{background:#e11d48;color:#fff;padding:18px 40px;border-radius:12px;font-size:1.18rem;font-weight:bold;text-decoration:none;border:none;display:inline-block;margin:16px 0 7px;}
-    .btn-main:hover{background:#be185d;}
-    .testimonials{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
-    .testimonial{background:#f3f4f6;padding:13px 7px 15px;border-radius:10px;font-size:.99rem;}
-    .testimonial .avatar{background:#e11d48;color:#fff;font-weight:bold;border-radius:50%;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;margin-right:7px;}
-    details{background:#f8fafc;margin:10px 0 0 0;border-radius:6px;}
-    summary{color:#e11d48;font-weight:bold;cursor:pointer;}
-    .footer{text-align:center;background:#1e293b;color:#fff;padding:35px 0 10px;border-radius:32px 32px 0 0;}
-    .footer .brand{font-weight:bold;font-size:1.07rem;}
-    .footer .desc{opacity:.85;font-size:1.06rem;margin-bottom:10px;}
-    .socials{margin:8px 0;}
-    .footer-link{margin:0 6px;}
-    .footer-link svg{width:23px;vertical-align:middle;}
-    @media(max-width:900px){.testimonials{grid-template-columns:1fr 1fr;}}
-    @media(max-width:700px){.main{padding:0 1vw;} .block{padding:14px 4px;} .testimonials{grid-template-columns:1fr;}}
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      color: #23272f;
+      background: #f8fafc;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 44px 0 36px 0;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 110px;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 24px rgba(239,68,68,0.18);
+    }
+    .section {
+      max-width: 840px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 30px rgba(15,23,42,0.04);
+      padding: 38px 26px 32px;
+    }
+    .aida-step {
+      margin-bottom: 50px;
+      padding-bottom: 42px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .aida-title {
+      font-size: 2rem;
+      color: #e11d48;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .aida-icon {
+      font-size: 2rem;
+    }
+    .subtitle {
+      color: #64748b;
+      font-size: 1.18rem;
+      margin-top: -7px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .cta {
+      background: #e11d48;
+      color: #fff !important;
+      display: inline-block;
+      margin: 16px 0 0 0;
+      padding: 16px 46px;
+      font-size: 1.3rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 3px 18px rgba(239,68,68,0.10);
+      transition: background 0.2s;
+    }
+    .cta:hover {
+      background: #be185d;
+    }
+    .features-list {
+      padding-left: 24px;
+      margin: 0 0 18px 0;
+    }
+    .features-list li {
+      margin-bottom: 12px;
+      font-size: 1.09rem;
+      color: #373944;
+    }
+    .testimonial-box {
+      background: #f8fafc;
+      padding: 18px 16px 10px;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+      font-style: italic;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    .testimonial-name {
+      color: #e11d48; font-weight:600; font-style:normal;
+    }
+    /* Social icon bar */
+    .social-bar {
+      margin: 44px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+    }
+    .social-link {
+      display: inline-block;
+      width: 39px;
+      height: 39px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(15,23,42,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: box-shadow 0.2s;
+    }
+    .social-link:hover {
+      box-shadow: 0 4px 16px rgba(239,68,68,0.27);
+      background: #ffe4e6;
+    }
+    .social-link svg {
+      height: 24px;
+      width: 24px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .section { padding: 20px 4vw; }
+      header, .testimonial-box { font-size: 1rem; }
+      .aida-title { font-size: 1.4rem;}
+    }
   </style>
 </head>
 <body>
-<header>
-  <img src="KIT-SOCIAL-RISTORANTI-COVER.png" alt="Kit Social Ristoranti EuroBrand"/>
-  <div class="brand">Kit Social 30 Giorni per Ristoranti</div>
-  <div class="subtitle">
-    Contenuti social che convertono solo per ristoranti.<br>
-    EuroBrand, un kit per ogni nicchia – questa landing promuove esclusivamente il kit settore RISTORANTI.
-  </div>
-  <nav>
-    <a href="#interesse">Cosa ottieni</a>
-    <a href="#desiderio">Testimonianze</a>
-    <a href="#azione">Acquista</a>
-  </nav>
-</header>
-<div class="main">
-  <section class="block" id="attenzione">
-    <h2>🍕 Vuoi una sala prenotata ogni sera?</h2>
-    <h3>Il Kit Social per ristoranti che elimina il blocco da pagina bianca e ti fa vendere con Instagram & Co.</h3>
-    <div class="img-section"><img src="RISTORANTE-HERO.jpg" alt="Ristorante Funnel Kit Social"></div>
-    <ul class="benefits">
-      <li>
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>100 prompt AI e strategie provate sul campo
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>Hook, stories, email e reels per prenotazioni vere
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>Lanciabile in meno di un'ora
-      </li>
-    </ul>
-  </section>
-  <section class="block" id="interesse">
-    <h2>👀 Cosa ottieni con il Kit?</h2>
-    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:19px;">
-      <div class="img-section" style="flex:1;"><img src="KIT-BOX-MOCKUP.png" alt="Box Kit Funnel"></div>
-      <ul class="benefits" style="flex:2;">
-        <li>
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>100 prompt AI verticali: post, reels, email, recensioni, promo
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>30 hook reels + 30 caption
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>10 email marketing e 10 stories
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2l4-4"/></svg>Calendario editoriale 30 giorni
-        </li>
+  <header>
+    <img src="kit-ristoranti-cover.png" alt="Kit Social AI Ristoranti" />
+    <h1>EuroBrand - Kit Ristoranti</h1>
+    <div style="font-size: 1.04rem; color: #f3f4f6; font-weight: 600;">
+      🍕 Soluzioni social AI su misura per la ristorazione italiana.<br>
+      Contenuti che convertono, clienti che ritornano.
+    </div>
+    <div class="social-bar">
+      <a class="social-link" href="https://instagram.com/eurobrand_social" title="Visita Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.5" stroke="#e1306c" stroke-width="1.5"/><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25" stroke="#e1306c" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#e1306c"/></svg>
+      </a>
+      <a class="social-link" href="https://facebook.com/EuroBrandSocialKit" title="Visita Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25" stroke="#2563eb" stroke-width="1.5"/><path d="M16 12h-2v4h-2v-4h-1.5V10H12V8.75C12 8.06 12.56 7.5 13.25 7.5H16v2h-2.5V10H16v2Z" fill="#2563eb"/></svg>
+      </a>
+      <a class="social-link" href="https://tiktok.com/@eurobrandsocial" title="Visita TikTok" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M16.4 2v4.5a3.1 3.1 0 002.8 3.1c.36.05.72.09 1.09.09V12h-2a5 5 0 01-5-5V3.6h3.05ZM7 21a5 5 0 01-5-5 5 5 0 015-5h2v2H7a3 3 0 100 6 3 3 0 003-3v-2h2v2a5 5 0 01-5 5Z" fill="#111" /></svg>
+      </a>
+    </div>
+  </header>
+  <div class="section">
+    <!-- ATTENZIONE -->
+    <div class="aida-step">
+      <div class="aida-title"><span class="aida-icon">👀</span>Attira l'attenzione</div>
+      <div class="subtitle">Sei un ristorante, pizzeria, o trattoria? Sei stanco di pubblicare foto che non convertono?</div>
+      <ul class="features-list">
+        <li>Stai perdendo clienti ogni giorno perché non hai contenuti originali?</li>
+        <li>Troppe ore spese per postare e poche prenotazioni?</li>
+        <li>Vuoi finalmente distinguerti dai concorrenti?</li>
+      </ul>
+      <div class="testimonial-box">
+        "Per mesi pubblicavamo solo foto dei piatti... da quando usiamo i prompt AI EuroBrand, IG e Facebook portano clienti veri a tavola."
+        <div class="testimonial-name">— Marco (Osteria Il Forno, Roma)</div>
+      </div>
+    </div>
+    <!-- INTERESSE -->
+    <div class="aida-step">
+      <div class="aida-title"><span class="aida-icon">💡</span>Suscita Interesse</div>
+      <div class="subtitle">Kit Social AI pronto per la ristorazione italiana</div>
+      <ul class="features-list">
+        <li>100 prompt AI studiati per il food (post, reels, email, recensioni, promo)</li>
+        <li>30 hook reel virali + 30 caption con CTA "prenota subito"</li>
+        <li>10 idee stories interattive e 10 email professionali</li>
+        <li>Calendario editoriale 30 giorni già compilato</li>
+        <li>Istruzioni rapidissime anche per chi "odia" i social</li>
+      </ul>
+      <div class="testimonial-box">
+        "Un prompt, una pubblicazione automatica, oggi ho il calendario social pieno per un mese!"
+        <div class="testimonial-name">— Giulia (Trattoria Nonna, Firenze)</div>
+      </div>
+    </div>
+    <!-- DESIDERIO -->
+    <div class="aida-step">
+      <div class="aida-title"><span class="aida-icon">🔥</span>Crea Desiderio</div>
+      <div class="subtitle">Perché amano EuroBrand - Kit Ristoranti</div>
+      <ul class="features-list">
+        <li>Zero improvvisazione: solo contenuti testati nel settore food</li>
+        <li>Risparmia almeno 6 ore a settimana: tutto pronto, zero fatica</li>
+        <li>Più prenotazioni, più recensioni positive</li>
+        <li>Perfetto anche per social manager e piccoli imprenditori</li>
+        <li>Bonus: prompt immagini AI premium (Midjourney, Dall-E)</li>
+      </ul>
+      <div class="testimonial-box">
+        "Reels e stories generate con il kit EuroBrand hanno portato più prenotazioni che ogni altra campagna fatta."
+        <div class="testimonial-name">— Antonio (Pizzeria Napoli, Milano)</div>
+      </div>
+    </div>
+    <!-- AZIONE -->
+    <div>
+      <div class="aida-title"><span class="aida-icon">🚀</span>Punta all'Azione!</div>
+      <div class="subtitle">Inizia oggi: scarica e personalizza. Domani il calendario è già pieno!</div>
+      <a class="cta" href="https://payhip.com/b/YOUR_PRODUCT_ID" target="_blank">
+        👉 Acquista Subito - 14,90€
+      </a>
+      <p style="margin-top:15px; font-size:1.09rem; color:#64748b;">
+        Pagamento sicuro · Download immediato · Supporto 90 giorni
+      </p>
+      <ul class="features-list" style="margin-top:18px;">
+        <li><b>Domande?</b> Scrivici su WhatsApp: <a href="https://wa.me/393481234567" style="color:#e11d48;text-decoration:underline;" target="_blank">393481234567</a></li>
+        <li><b>Email:</b> <a href="mailto:supporto@eurobrand.it" style="color:#e11d48;text-decoration:underline;">supporto@eurobrand.it</a></li>
       </ul>
     </div>
-  </section>
-  <section class="block" id="desiderio">
-    <h2>⭐ Già usato da decine di ristoranti</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <span class="avatar">MR</span>
-        <b>Marco Rossi</b> – Pizzeria Il Forno, Roma
-        <div style="color:#fbbf24;">★★★★★</div>
-        <div>"+35% prenotazioni in 2 settimane. Prompt super!"</div>
-      </div>
-      <div class="testimonial">
-        <span class="avatar">GB</span>
-        <b>Giulia Bianchi</b> – Trattoria Nonna, Firenze
-        <div style="color:#fbbf24;">★★★★★</div>
-        <div>"Finalmente contenuti italiani che convertono! Risparmio 5 ore ogni settimana."</div>
-      </div>
-      <div class="testimonial">
-        <span class="avatar">AE</span>
-        <b>Antonio Esposito</b> – Osteria del Mare, Napoli
-        <div style="color:#fbbf24;">★★★★★</div>
-        <div>"Reels boom! +50% follower nel primo mese."</div>
-      </div>
-    </div>
-  </section>
-  <section class="block" id="azione" style="text-align:center;">
-    <h2>Scarica il kit, rivoluziona i tuoi social oggi stesso!</h2>
-    <a href="https://payhip.com/b/YOUR_PRODUCT_ID" class="btn-main" target="_blank">🛒 Acquista Il Kit Ora</a>
-    <div style="color:#64748b;">Pagamento sicuro Payhip · Download immediato · Supporto incluso</div>
-  </section>
-  <section style="margin:40px auto;max-width:670px;">
-    <h2 style="color:#e11d48;text-align:center;font-size:2rem;">Domande Frequenti</h2>
-    <details><summary>Serve ChatGPT Plus?</summary>No, tutti i prompt funzionano anche con versioni gratuite di ChatGPT/Claude.</details>
-    <details><summary>Piccole trattorie/street food?</summary>Sì, il kit è pensato anche per realtà familiari.</details>
-    <details><summary>Ricevo supporto e aggiornamenti?</summary>90 giorni inclusi + aggiornamenti mensili per prompt.</details>
-    <details><summary>Uso per catene di locali?</summary>Licenza 1 locale, multi-sede a condizioni dedicate.</details>
-  </section>
-</div>
-<footer class="footer">
-  <div class="brand">EuroBrand | Kit Social Ristoranti</div>
-  <div class="desc">
-    Soluzioni social per la ristorazione italiana.<br>
-    Landing dedicata SOLO al kit ristoranti (altri kit, altri link). Tutti i diritti riservati.
   </div>
-  <div class="socials">
-    <a class="footer-link" href="https://instagram.com/eurobrand_social" target="_blank">
-      <svg viewBox="0 0 512 512"><circle cx="256" cy="256" r="45" fill="#fff"/><path fill="#fff" d="M256 152c57.36 0 104 46.64 104 104s-46.64 104-104 104-104-46.64-104-104 46.64-104 104-104m0-40c-79.41 0-144 64.59-144 144s64.59 144 144 144 144-64.59 144-144-64.59-144-144-144zm131.5 51.5c0 14.75-11.75 26.5-26.5 26.5s-26.5-11.75-26.5-26.5 11.75-26.5 26.5-26.5 26.5 11.75 26.5 26.5z"/><circle cx="393.5" cy="118.5" r="17.5" fill="#fff"/></svg>
-    </a>
-    <a class="footer-link" href="https://facebook.com/EuroBrandSocialKit" target="_blank">
-      <svg viewBox="0 0 32 32"><path fill="#fff" d="M19.001 6.999v3.001h2.585l-.34 3h-2.245V28h-4V13h-2v-3h2V8.998C15.001 5.909 17.12 4 19.871 4c1.829 0 2.129.156 2.129.156v3.001h-2.999z"/></svg>
-    </a>
-    <a class="footer-link" href="https://t.me/+your-telegram-id" target="_blank">
-      <svg width="25" height="25" fill="#fff" viewBox="0 0 24 24"><path d="M21.089 3.534c-.794-.318-3.472-1.263-6.503-.257C9.757 4.41 6.96 6.646 5.204 8.145 3.02 10.027 2.662 11.868 2.02 13.191c-.472.944-.964 1.935-1.504 2.965-.363.718-.65 1.346-.85 1.855a1.031 1.031 0 0 0 1.402 1.353c.181-.079.393-.195.618-.34.186-.126.386-.263.579-.401C7.788 19.753 12.329 20.996 12.64 21.094c1.519.489 2.98.488 4.511.274 3.565-.486 5.253-2.2 6.315-3.669.217-.298.358-.553.465-.749a1.026 1.026 0 0 0-.438-1.44c-.143-.071-.313-.146-.494-.22-.924-.363-2.392-1.042-5.185-1.948-.234-.073-.477-.147-.73-.225-.345-.101-.671-.2-.941-.291-.28-.073-.606-.149-1.011-.223-.726-.14-1.337-.248-2-.327a17.457 17.457 0 0 1-2.332-.387c-.547-.105-1.063-.208-1.468-.298-.25-.057-.439-.107-.545-.14-.117-.037-.239-.09-.223-.188.012-.068.116-.118.32-.132.189-.013.371-.019.51-.018.581.004 1.8.073 3.124.18 1.457.116 2.956.273 4.4.418 1.41.141 2.595.343 3.451.528.144.031.306.07.497.12.416.104.842.208 1.274.318.282.072.524.133.723.181.21.051.362.094.412.129.055.039.044.103-.037.14z"/></svg>
-    </a>
-  </div>
-  <div style="opacity:.7;font-size:.97rem;">&copy; 2025 EuroBrand. Tutti i diritti riservati.</div>
-</footer>
-<script>
-document.querySelectorAll('nav a').forEach(function(link){
-  link.addEventListener('click',function(e){
-    e.preventDefault();
-    var target = document.querySelector(this.getAttribute('href'));
-    if(target){target.scrollIntoView({behavior:'smooth',block:'start'});}
-  });
-});
-</script>
+  <footer style="margin-top:60px;padding:38px 0 34px 0;background:#0f172a;text-align:center;color:#fff;font-size:1rem;font-weight:600;border-radius:0 0 12px 12px">
+    © 2025 EuroBrand - Kit Ristoranti · Solo per il settore ristorazione
+  </footer>
+  <script>
+    // Google Analytics esempio (personalizza con il tuo tag)
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){ dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-XXXXXXX-X' );
+  </script>
 </body>
 </html>
